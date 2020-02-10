@@ -149,6 +149,8 @@ vendor/etc/acdbdata/QRD/sdm670-skuw-snd-card/QRD_SKUW_workspaceFile.qwsp
 # Audio-Hardware
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.sdm710.so
+vendor/lib/hw/audio.r_submix.default.so
+vendor/lib/hw/audio.usb.default.so
 vendor/lib/libtinycompress_vendor.so
 vendor/lib/soundfx/libqcompostprocbundle.so
 vendor/lib/soundfx/libqcomvisualizer.so
@@ -156,6 +158,8 @@ vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libvolumelistener.so
 vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.sdm710.so
+vendor/lib64/hw/audio.r_submix.default.so
+vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/libtinycompress_vendor.so
 vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvisualizer.so
@@ -367,6 +371,7 @@ vendor/lib/hw/com.qti.chi.override.so
 vendor/lib/libbase64.so
 vendor/lib/libc++_shared.so
 vendor/lib/libcamera_core_hwi.so
+vendor/lib/libcamhidlsensor.so
 vendor/lib/libcamxfdalgov7.so
 vendor/lib/libcamxfdengine.so
 vendor/lib/libcamxstatscore.so
@@ -885,6 +890,8 @@ vendor/firmware/tp/18383/FW_S3706_SAMSUNG_FAE.img
 vendor/firmware/tp/18383/LIMIT_S3706_SAMSUNG.img
 vendor/firmware/ufs/MICRON-128GB-UFS-MT.bin
 vendor/firmware/ufs/move_target_ufs_fw_to_opporeserve1.sh
+vendor/firmware/ufs/SAMSUNG-KM5V7001DM-B621.bin
+vendor/firmware/ufs/SAMSUNG-KM8V7001JM-B810.bin
 vendor/firmware/ufs/SKhynix-H9HQ53ACPMMDAR.bin
 vendor/firmware/ufs/SKhynix-H9HQ53AECMMDAR.bin
 
@@ -1837,14 +1844,18 @@ vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Thermal
+vendor/bin/hw/android.hardware.thermal@1.0-service
 vendor/bin/thermal-engine
+vendor/etc/init/android.hardware.thermal@1.0-service.rc
 vendor/etc/thermal-engine.conf
+vendor/lib/hw/android.hardware.thermal@1.0-impl.so
+vendor/lib/hw/thermal.sdm710.so
 -vendor/lib/libthermalclient.so
+vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
+vendor/lib64/hw/thermal.sdm710.so
 -vendor/lib64/libthermalclient.so
 
 # Thermal-Hardware
-vendor/lib/hw/thermal.sdm710.so
-vendor/lib64/hw/thermal.sdm710.so
 
 # Time
 -vendor/app/TimeService/TimeService.apk
@@ -2025,7 +2036,6 @@ vendor/lib/libavformat_vendor.so
 vendor/lib/libavutil_vendor.so
 vendor/lib/libblur_channel.so
 vendor/lib/libbokehclient.so
-vendor/lib/libcamhidlsensor.so
 vendor/lib/libcert_parse.wpa_s.so
 vendor/lib/libcVoiceQ.so
 vendor/lib/libdapparamstorage.so
